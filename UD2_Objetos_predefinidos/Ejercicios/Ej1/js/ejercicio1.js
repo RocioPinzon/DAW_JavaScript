@@ -6,6 +6,7 @@ function principal(){
     var separadorTipo = " ";
     
     while(pedirFrase!="ESC".toLowerCase()){
+
         
         var pedirFrase = prompt("Introduzca una frase");
 
@@ -18,6 +19,12 @@ function principal(){
             palabras[i]=giraPalabra(palabras[i]);
           
         }
+        salida=palabras;
+        palabras = palabras.join(" ");
+        salida+= " --> " + palabras + "<br>";
+        document.getElementById("salida").innerHTML += "<div>"
+        + salida + "</div>";
+
         console.log(palabras.toString());
        
         function separarPalabras(frasePedida,separadorTipo){
@@ -42,8 +49,7 @@ function principal(){
             return respuesta;   
         }
         
-        document.getElementById("contenido").innerHTML = "<div>"
-        + palabras + "</div>";
+        
     }   
 }
     window.onload = principal;
