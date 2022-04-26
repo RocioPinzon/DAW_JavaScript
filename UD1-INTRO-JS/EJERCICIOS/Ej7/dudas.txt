@@ -1,0 +1,3 @@
+
+-podría mejorar el codigo con un bucle para calcular las monedas.
+-mostrar amigable
