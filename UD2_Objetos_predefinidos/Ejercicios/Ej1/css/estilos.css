@@ -1,0 +1,17 @@
+#divReloj{
+    font-family:DigitalDream;
+    font-size:2em;
+    color:darkgreen;
+    margin:15px;
+    padding:15px;
+    border:5px solid darkgreen;
+    background-color:lightgreen;
+    float:left;
+    border-radius: 10px;
+}
+
+#parrafo{
+    font-family:Calibri;
+    font-size:1.5em;
+    float:top;
+}
